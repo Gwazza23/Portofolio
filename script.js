@@ -1,3 +1,4 @@
+//about me button coding
 let button = document.getElementById('aboutButton');
 let about = document.querySelector('#about p');
 let closeButton = document.getElementById('closeButton');
