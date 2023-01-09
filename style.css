@@ -120,3 +120,12 @@ section h2{
     text-align: center;
 }
 
+#skillsSection ul li{
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+#skillsSection ul li img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
