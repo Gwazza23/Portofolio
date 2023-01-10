@@ -94,8 +94,7 @@ header h2{
     transition: 0.3s ease-in-out;
     background-color: aliceblue;
 }
-
-section h2{
+#projectSection h2{
     text-align: center;
     text-decoration: underline;
 }
@@ -118,6 +117,16 @@ section h2{
     text-align: center;
 }
 
+#skillsTitle{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#skillsSection{
+    display: flex;
+    justify-content: space-around;
+}
+
 #skillsSection ul li{
     display: inline-block;
     margin-right: 2rem;
@@ -126,6 +135,65 @@ section h2{
 #skillsSection ul li img{
     width: 2.5rem;
     height: 2.5rem;
+    
+}
+
+/* css for mobile viewing - main page */
+
+@media only screen and (max-width:480px){
+    header{
+        display: block;
+        background-color: aliceblue;
+        box-shadow: none;
+    }
+    header h2{
+        margin: 0;
+        text-align: center;
+        border-radius: 0;
+    }
+    #mainNav{
+        flex-direction: column;
+    }
+    #mainNav a{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        border-radius: 0;
+        border-top: 1px solid rgb(29, 115, 252);
+    }
+    #aboutSection{
+        display:contents;
+        position: relative;
+    }
+    #aboutButton{
+        display: block;
+        text-align: center;
+        width: fit-content;
+        margin: 3rem auto 3rem auto;
+    }
+    #about p{
+        margin: 2rem 1rem;
+        position: relative;
+    }
+
+    #closeButton{
+        margin-bottom: 4rem;
+        position: relative;
+    }
+    #projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #project1, #project2, #project3 {
+        margin: 1.5rem 0rem;
+    }
+
+    #skillsSection {
+        margin: 0 auto;
+    }
+
 }
 
 /* contact file css */
@@ -147,4 +215,14 @@ section h2{
     width: 2.5rem;
     height: 2.5rem;
     margin-right: 1.75rem;
+}
+
+/* css for mobile viewing - contact page */
+
+@media only screen and (max-width: 480px) {
+    #mainSectionContacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
