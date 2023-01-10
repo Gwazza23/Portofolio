@@ -138,6 +138,34 @@ header h2{
     
 }
 
+/*css for tablet viewing - main page */
+
+@media only screen and (max-width:768px){
+    #aboutSection{
+        display: contents;
+        position: relative;
+    }
+
+    #aboutButton{
+        display: block;
+        text-align: center;
+        width: fit-content;
+        margin: 3rem auto 3rem auto;
+    }
+
+    #about p{
+        margin: 2rem 1rem;
+        position: relative;
+    }
+    #projects{
+        display: flex;
+    }
+
+    #project1, #project2, #project3{
+        margin: 0rem 0.5rem;
+    }
+}
+
 /* css for mobile viewing - main page */
 
 @media only screen and (max-width:480px){
@@ -195,6 +223,10 @@ header h2{
     }
 
 }
+
+
+
+
 
 /* contact file css */
 
