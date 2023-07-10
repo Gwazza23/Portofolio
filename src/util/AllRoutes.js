@@ -3,18 +3,23 @@ import { AnimatePresence } from "framer-motion";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import MainPage from "../pages/MainPage/MainPage";
-import Test from "../pages/Test/Test";
-
-
+import NavBar from "../pages/NavBar/NavBar";
+import AboutPage from "../pages/AboutPage/AboutPage";
+import ProjectPage from "../pages/ProjectPage/ProjectPage";
+import ContactPage from "../pages/ContactPage/ContactPage";
 
 function AllRoutes() {
   const location = useLocation();
 
   return (
-    <AnimatePresence initial={false} mode="wait">
+    <AnimatePresence  mode="wait">
       <Routes location={location}>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/test" element={<Test />} />
+        <Route path="/" element={<NavBar />}>
+          <Route index element={<MainPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Route>
       </Routes>
     </AnimatePresence>
   );
