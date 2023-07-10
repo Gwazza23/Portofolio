@@ -1,10 +1,12 @@
 import React from "react";
 import Hero from "../Hero/Hero";
+import AboutPage from "../AboutPage/AboutPage";
 
-function MainPage() {
+function MainPage({ setAboutIsInView }) {
   return (
     <>
       <Hero />
+      <AboutPage setAboutIsInView={setAboutIsInView} />
     </>
   );
 }

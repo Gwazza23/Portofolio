@@ -4,9 +4,8 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <div className="hero-main-div">
+    <div id="top" className="hero-main-div">
       <div className="hero-div">
-        
         <div className="hero-text-div">
           <p>Hello!</p>
           <p>

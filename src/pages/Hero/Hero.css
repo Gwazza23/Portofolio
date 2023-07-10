@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .hero-div {
   position: relative;
   overflow: hidden;
