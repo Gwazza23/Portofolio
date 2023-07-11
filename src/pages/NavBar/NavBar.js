@@ -4,14 +4,23 @@ import "./NavBar.css";
 import { easeIn, motion } from "framer-motion";
 import { Outlet } from "react-router-dom";
 
-function NavBar({ AboutIsInView }) {
+function NavBar({ AboutIsInView, ProjectsIsInView }) {
   const [over, setOver] = useState();
   const [isMobile, setIsMobile] = useState();
+  const [section, setSection] = useState(false);
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     section.scrollIntoView({ behavior: "smooth" });
   };
+
+  useEffect(() => {
+    if (AboutIsInView) {
+      setSection(1);
+    } else if (ProjectsIsInView) {
+      setSection(2);
+    }
+  }, [AboutIsInView, ProjectsIsInView]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -45,7 +54,7 @@ function NavBar({ AboutIsInView }) {
             onClick={() => scrollToSection("about")}
           >
             About
-            {over === 1 || AboutIsInView ? (
+            {over === 1 || section === 1 ? (
               <motion.div className="underline" layoutId="underline" />
             ) : null}
           </li>
@@ -55,7 +64,7 @@ function NavBar({ AboutIsInView }) {
             onClick={() => scrollToSection("projects")}
           >
             Projects
-            {over === 2 ? (
+            {over === 2 || section === 2 ? (
               <motion.div className="underline" layoutId="underline" />
             ) : null}
           </li>

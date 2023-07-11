@@ -91,7 +91,7 @@ function AboutPage({ setAboutIsInView }) {
           })}
         </div>
       </div>
-      <div ref={ref} className="div-ref"></div>
+      <div ref={ref} className="div-ref about-ref"></div>
     </div>
   );
 }

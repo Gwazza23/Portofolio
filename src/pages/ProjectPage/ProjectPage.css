@@ -1,0 +1,23 @@
+.projects-main-div {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-title-div {
+    border: 1px solid black;
+    width: 55vw;
+}
+
+.projects-div {
+    border: 1px solid black;
+    height: 80vh;
+    width: 55vw;
+}
+
+.projects-ref {
+    bottom: -195vh;
+}

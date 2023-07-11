@@ -22,11 +22,7 @@
   font-weight: 300;
 }
 
-.div-ref {
-  visibility: hidden;
-  border: 1px solid white;
-  width: 100%;
-  position: absolute;
+.about-ref {
   bottom: -95vh;
 }
 

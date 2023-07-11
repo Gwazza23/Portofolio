@@ -9,14 +9,15 @@ import { useState } from "react";
 function AllRoutes() {
   const location = useLocation();
   const [AboutIsInView, setAboutIsInView] = useState(false);
+  const [ProjectsIsInView, setProjectsIsInView] = useState(false);
 
   return (
     <AnimatePresence mode="wait">
       <Routes location={location}>
-        <Route path="/" element={<NavBar AboutIsInView={AboutIsInView} />}>
+        <Route path="/" element={<NavBar AboutIsInView={AboutIsInView} ProjectsIsInView={ProjectsIsInView} />}>
           <Route
             index
-            element={<MainPage setAboutIsInView={setAboutIsInView} />}
+            element={<MainPage setAboutIsInView={setAboutIsInView} setProjectsIsInView={setProjectsIsInView} />}
           />
         </Route>
       </Routes>
