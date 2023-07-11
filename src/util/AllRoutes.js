@@ -11,7 +11,7 @@ function AllRoutes() {
   const [AboutIsInView, setAboutIsInView] = useState(false);
 
   return (
-    <AnimatePresence  mode="wait">
+    <AnimatePresence mode="wait">
       <Routes location={location}>
         <Route path="/" element={<NavBar AboutIsInView={AboutIsInView} />}>
           <Route

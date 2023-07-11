@@ -30,6 +30,30 @@
   bottom: -95vh;
 }
 
+.skill-section {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 5vh;
+}
+
+.skill-section img {
+  height: 7vh;
+}
+
+.skill-section div:last-child img {
+  position: relative;
+  top: 0.75px;
+  border: 1px solid white;
+  border-radius: 7px;
+  height: 6.6vh;
+}
+
+.logo-div p {
+  position: absolute;
+  text-align: center;
+}
+
 @media only screen and (max-width: 320px) {
   .about-title-div,
   .about-div {
@@ -40,6 +64,18 @@
   }
   .about-div p {
     font-size: 0.85rem;
+  }
+}
+
+@media only screen and (max-width: 850px ) {
+  .skill-section {
+    padding: 1vh;
+    overflow: scroll;
+    height: 12vh;
+  } 
+
+  .skill-section .logo-div {
+    margin: 0px 1vw;
   }
 }
 
@@ -54,4 +90,6 @@
   .about-div p {
     font-size: 0.9rem;
   }
+
+
 }
