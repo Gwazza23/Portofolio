@@ -82,6 +82,7 @@ function AboutPage({ setAboutIsInView }) {
                 initial="initial"
                 whileHover="hover"
                 className="logo-div"
+                key={logo[0]}
               >
                 {" "}
                 <motion.img className="img" src={logo[0]} alt={logo[1]} variants={imgVariant} />

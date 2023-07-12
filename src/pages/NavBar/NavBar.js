@@ -19,6 +19,8 @@ function NavBar({ AboutIsInView, ProjectsIsInView }) {
       setSection(1);
     } else if (ProjectsIsInView) {
       setSection(2);
+    } else {
+      setSection(0)
     }
   }, [AboutIsInView, ProjectsIsInView]);
 
