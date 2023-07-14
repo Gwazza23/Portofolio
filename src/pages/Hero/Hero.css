@@ -50,6 +50,11 @@
   }
   .hero-text-div {
     width: 70vw;
+    margin: 0vh auto;
+  }
+  .hero-div {
+    width: fit-content;
+    overflow: hidden;
   }
 }
 
@@ -60,6 +65,11 @@
 
   .hero-text-div {
     width: 70vw;
+    margin: 0vh auto;
+  }
+  .hero-div {
+    width: fit-content;
+    overflow: hidden;
   }
 }
 
@@ -70,5 +80,10 @@
 
   .hero-text-div {
     width: 50vw;
+    margin: 0vh auto;
+  }
+  .hero-div {
+    width: fit-content;
+    overflow: hidden;
   }
 }

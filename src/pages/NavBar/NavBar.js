@@ -4,7 +4,7 @@ import "./NavBar.css";
 import { easeIn, motion } from "framer-motion";
 import { Outlet } from "react-router-dom";
 
-function NavBar({ AboutIsInView, ProjectsIsInView }) {
+function NavBar({ AboutIsInView, ProjectsIsInView, ContactIsInView }) {
   const [over, setOver] = useState();
   const [isMobile, setIsMobile] = useState();
   const [section, setSection] = useState(false);
@@ -19,10 +19,12 @@ function NavBar({ AboutIsInView, ProjectsIsInView }) {
       setSection(1);
     } else if (ProjectsIsInView) {
       setSection(2);
+    } else if (ContactIsInView) {
+      setSection(3);
     } else {
-      setSection(0)
+      setSection(0);
     }
-  }, [AboutIsInView, ProjectsIsInView]);
+  }, [AboutIsInView, ProjectsIsInView, ContactIsInView]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -49,7 +51,7 @@ function NavBar({ AboutIsInView, ProjectsIsInView }) {
         <div onClick={() => scrollToSection("top")} className="logo">
           <img src={"./images/Logo.png"} alt="logo" />
         </div>
-        <ul className={`nav-links ${AboutIsInView ? "white" : ""}`}>
+        <ul className={`nav-links ${AboutIsInView || ContactIsInView ? "white" : ""}`}>
           <li
             className="link"
             onMouseOver={() => setOver(1)}
@@ -76,7 +78,7 @@ function NavBar({ AboutIsInView, ProjectsIsInView }) {
             onClick={() => scrollToSection("contact")}
           >
             Contact
-            {over === 3 ? (
+            {over === 3  || section === 3 ? (
               <motion.div className="underline" layoutId="underline" />
             ) : null}
           </li>

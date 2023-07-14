@@ -1,0 +1,155 @@
+.Modal-main-div {
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  width: 65vw;
+  height: 78vh;
+}
+
+.Modal-title-div {
+  width: 90%;
+  margin: 1vh auto;
+}
+.Modal-button-div {
+  position: absolute;
+  right: 1vw;
+  top: 0;
+}
+
+.close-button {
+  cursor: pointer;
+  padding: 0.15vw;
+  background: none;
+  border: none;
+  font-size: 4vh;
+}
+
+.Modal-thumbnail-div {
+  padding: 1vh;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.Modal-thumbnail-div img {
+  width: 90%;
+  outline: 3.5px solid #17252a;
+  border-radius: 5px;
+}
+
+.Modal-description-div {
+  width: 90%;
+  margin: 0vh auto;
+  padding: 1vh;
+}
+
+.section {
+  margin: 1vh 0vw;
+}
+.section h3 {
+  margin-bottom: 0.5vh;
+}
+.section p,
+li {
+  font-weight: 300;
+}
+
+.section ul {
+  margin-left: 1vw;
+  list-style-type: "- ";
+}
+
+.tools {
+  display: flex;
+}
+.tools div {
+  margin: 0vh 1vw;
+}
+
+.button {
+  float: right;
+  margin: 1vh;
+  cursor: pointer;
+}
+
+.Links {
+  display: flex;
+  justify-content: center;
+  margin: 1vh;
+}
+
+.Git {
+  border: 2px solid white;
+  color: white;
+  background-color: #2b3137;
+}
+
+.Proj {
+  background-color: #3aafa9;
+  color: #17252a;
+  border: 2px solid #2b3137;
+}
+
+.notice {
+  border-radius: 5px;
+  padding: 1vh;
+  background: #00b02d;
+  border: 3px solid #17252a;
+}
+
+.Proj,
+.Git {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1vh;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.modal::backdrop {
+  background: linear-gradient(180deg, #3aafa9, #254e58);
+  opacity: 0.4;
+}
+
+.modal {
+  background-color: #254e58;
+  margin: auto;
+  outline: none;
+  border: 2px solid #def2f1;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 425px) {
+  .modal {
+    width: 90vw;
+  }
+
+  .Modal-main-div {
+    width: fit-content;
+  }
+  .section p,
+  div {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .modal {
+    width: 80vw;
+  }
+  .Modal-button-div {
+    text-align: right;
+  }
+  .Modal-main-div {
+    width: fit-content;
+  }
+  .section p,
+  div {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 767px ) and ( max-width: 1024px ){
+  .section p, div {
+    width: 100%;
+  }
+}

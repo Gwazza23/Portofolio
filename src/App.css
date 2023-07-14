@@ -25,3 +25,7 @@ body {
   position: absolute;
   z-index: 10;
 }
+
+.underline {
+  text-decoration: underline;
+}
