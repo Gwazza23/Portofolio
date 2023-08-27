@@ -111,9 +111,10 @@ li {
 }
 
 .modal {
-  background-color: #254e58;
+  background-color: rgba(37, 78, 88, 0.9);
   margin: auto;
   outline: none;
+  backdrop-filter: blur(4px);
   border: 2px solid #def2f1;
   border-radius: 5px;
 }

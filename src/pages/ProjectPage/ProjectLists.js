@@ -1,5 +1,6 @@
 import CinveVerseProject from "../Projects/CinveVerseProject";
 import HouseOfFashionProject from "../Projects/HouseOfFashionProject";
+import MusicNexusProject from "../Projects/MusicNexusProject";
 import RedditProject from "../Projects/RedditProject";
 
 export const projects = [
@@ -21,4 +22,10 @@ export const projects = [
     thumnail_url: './images/House-of-fashion-thumbnail.png',
     modal: <HouseOfFashionProject />
   },
+  {
+    id:4,
+    name: "Music Nexus",
+    thumnail_url: './images/Music-nexus-thumbnail.png',
+    modal: <MusicNexusProject />
+  }
 ];
