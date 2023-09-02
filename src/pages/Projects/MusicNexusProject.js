@@ -319,6 +319,25 @@ function MusicNexusProject() {
             Project Link
           </a>
         </div>
+        <div className="notice">
+          <p>
+            The project is under review to be granted a quota extension,
+            therefore it is considered under develpoment mode and cannot be
+            accessed unless the spotify account is whitelisted.
+            <br></br>
+            To bypass this please use the credentials provided below when
+            logging to authorize the app from spotify.
+            <br></br>
+            <br></br>
+            E-mail - tester145@gmail.com
+            <br></br>
+            Password - example145@gmail.com
+            <br></br>
+            <br></br>
+            Alternatively please follow the link to the GitHub page to view
+            screenshots of the project.
+          </p>
+        </div>
       </div>
     </div>
   );
